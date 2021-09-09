@@ -130,4 +130,8 @@ public class CompanyInfo {
         this.postedPosts.add(id);
     }
 
+    public void removeFromAddedPosts(String postId) {
+        this.postedPosts.removeIf(post -> (post.equals(postId)));
+    }
+
 }

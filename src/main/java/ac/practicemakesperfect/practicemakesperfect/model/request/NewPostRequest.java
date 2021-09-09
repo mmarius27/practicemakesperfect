@@ -3,28 +3,18 @@ package ac.practicemakesperfect.practicemakesperfect.model.request;
 import java.util.ArrayList;
 
 public class NewPostRequest {
-    String posterId;
     String title;
     String description;
     String type;
     String city;
     ArrayList<String> keywords;
 
-    public NewPostRequest(String posterId, String title, String description, String type, String city, ArrayList<String> keywords) {
-        this.posterId = posterId;
+    public NewPostRequest( String title, String description, String type, String city, ArrayList<String> keywords) {
         this.title = title;
         this.description = description;
         this.type = type;
         this.city = city;
         this.keywords = keywords;
-    }
-
-    public String getPosterId() {
-        return this.posterId;
-    }
-
-    public void setPosterId(String posterId) {
-        this.posterId = posterId;
     }
 
     public String getTitle() {
